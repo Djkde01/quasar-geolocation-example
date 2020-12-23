@@ -36,7 +36,7 @@ export default {
       return this.isPermissionDenied
     },
     _label () {
-      return this.label || this.hasPosition ? 'Resample' : 'Sample'
+      return this.label || this.hasPosition ? 'Get Location Again' : 'Get Location'
     },
     ...mapGeolocationGetters([
       'isPermissionKnown',
