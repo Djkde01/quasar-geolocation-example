@@ -15,7 +15,14 @@
           Geolocation App
         </q-toolbar-title>
 
-        <div>Built with Quasar {{ $q.version }}</div>
+        <div>
+          <a
+            style="text-decoration: none; color: white; font-weight: bold;"
+            href="https://djkde.com"
+          >
+            by Djkde
+          </a>
+        </div>
       </q-toolbar>
     </q-header>
 
@@ -30,7 +37,7 @@
           header
           class="text-grey-8"
         >
-          Essential Links
+          Links
         </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
@@ -61,16 +68,22 @@ export default {
       leftDrawerOpen: false,
       essentialLinks: [
         {
-          title: 'Framework',
+          title: 'Built With Quasar',
           caption: 'quasar.dev',
           icon: 'school',
           link: 'https://quasar.dev'
         },
         {
-          title: 'Github',
+          title: 'Original Repo',
           caption: 'tomers/quasar-geolocation-example',
           icon: 'code',
           link: 'https://github.com/tomers/quasar-geolocation-example'
+        },
+        {
+          title: 'Test Repo',
+          caption: 'djkde01/quasar-geolocation-example',
+          icon: 'code',
+          link: 'https://github.com/Djkde01/quasar-geolocation-example'
         },
         {
           title: 'Demo Site',

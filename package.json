@@ -12,8 +12,8 @@
     "deploy": "quasar build && dotenv-load surge ./dist/spa/ \\${SURGE_DOMAIN} --token \\${SURGE_TOKEN}",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
-    "cordova:dev": "quasar dev -m cordova -T android -- --buildConfig=\"../build.cordova.json\"",
-    "cordova:build": "quasar build -m cordova -T android -- --buildConfig=\"../build.cordova.json\""
+    "cordova:dev": "quasar dev -m cordova -T android -- --buildConfig=\"./build.cordova.json\"",
+    "cordova:build": "quasar build -m cordova -T android -- --buildConfig=\"./build.cordova.json\""
   },
   "dependencies": {
     "@quasar/extras": "^1.6.0",
