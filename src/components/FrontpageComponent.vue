@@ -1,8 +1,8 @@
 <template>
   <div class="column q-gutter-md">
+    <sample-position v-if="hasPosition" />
     <sample-geolocation-button />
     <geolocation-permission-banner />
-    <sample-position v-if="hasPosition" />
   </div>
 </template>
 

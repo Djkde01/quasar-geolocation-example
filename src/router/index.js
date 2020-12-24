@@ -13,6 +13,13 @@ Vue.use(VueRouter)
  * async/await or return a Promise which resolves
  * with the Router instance.
  */
+import * as VueGoogleMaps from 'vue2-google-maps'
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyCl1izHkv9zeFSKWUn0u4_uMThMYNnXRXY'
+  }
+})
 
 export default function (/* { store, ssrContext } */) {
   const Router = new VueRouter({

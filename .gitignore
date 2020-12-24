@@ -33,3 +33,10 @@ yarn-error.log*
 *.sln
 
 .env
+
+#Sign and Build Settings
+build.cordova.json
+quasar-debug-key.jks
+quasar-debug-key.jks.old
+quasar-release-key.jks
+quasar-release-key.jks.old
